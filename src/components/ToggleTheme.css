@@ -1,0 +1,51 @@
+
+.toggle-theme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .toggle-theme-checkbox {
+    display: none;
+  }
+  
+  .toggle-theme-label {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    border-radius: 17px;
+    background-color: #ccc; /* Default background color */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-theme.dark .toggle-theme-label {
+    background-color: #555; /* Dark mode background color */
+  }
+  
+  .toggle-theme.light .toggle-theme-label {
+    background-color: #cce1e3; /* Light mode background color */
+  }
+  
+  .toggle-theme-ball {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #fff; /* Default ball color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .toggle-theme.light .toggle-theme-ball {
+    background-color: #333; /* Light mode ball color */
+  }
+  
+  .toggle-theme.dark .toggle-theme-ball {
+    transform: translateX(26px); /* Dark mode position */
+  }
+  

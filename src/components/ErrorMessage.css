@@ -1,0 +1,23 @@
+
+  .error-message {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(10px);
+    font-size: 18px;
+    font-weight: 600;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .error-message.dark {
+    color: #ff6b6b;
+  }
+  
+  .error-message.light {
+    color: #e53935;
+  }
